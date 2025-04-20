@@ -4,10 +4,10 @@ This repository is categorized into 5 folders:
 
 Defense
 
-Documentation
+[Documentation](Documentation/ProcessDocumentation.md)
 
 Project
 
-Proposal
+[Proposal](Proposal/TeoJiaXian_BAProposal.pdf)
 
 Thesis
