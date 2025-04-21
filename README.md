@@ -11,9 +11,10 @@ This repository is categorized into 5 folders:
 + Read the [Process Documentation](Documentation/ProcessDocumentation.md) for process journal entries, to dos, and manifestos
 ### Project
 ***
++ Look at the [Code Repository](Project) for the project's source code.
 ### Proposal
 ***
-+ Read the initial [Proposal](Proposal/TeoJiaXian_BAProposal.pdf) of the thesis
++ Read the initial [Proposal](Proposal/TeoJiaXian_BAProposal.pdf) document of the thesis
 
 ### Thesis
 ***
