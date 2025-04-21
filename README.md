@@ -1,13 +1,20 @@
-This is the official repository of the Game Design Bachelor Thesis of Teo Jia Xian.
+# Game Design BA
+This is the official repository of the Game Design Bachelor Thesis of (Jan) Jia Xian Teo.
 
 This repository is categorized into 5 folders:
 
-Defense
+### Defense
+***
 
-[Documentation](Documentation/ProcessDocumentation.md)
+### Documentation
+***
++ Read the [Process Documentation](Documentation/ProcessDocumentation.md) for process journal entries, to dos, and manifestos
+### Project
+***
+### Proposal
+***
++ Read the initial [Proposal](Proposal/TeoJiaXian_BAProposal.pdf) of the thesis
 
-Project
-
-[Proposal](Proposal/TeoJiaXian_BAProposal.pdf)
-
-Thesis
+### Thesis
+***
++ Read the final [Thesis](Thesis/JiaXianTeo_GamingBeyondTheWalls_BAThesis.pdf) paper for this bachelor's.
