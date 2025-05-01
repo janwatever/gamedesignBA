@@ -2,7 +2,7 @@ using System;
 using Prototype.Manager;
 using UnityEngine;
 
-namespace Prototype.PlayerController
+namespace Prototype.PlayerControl
 {
     public class PlayerController : MonoBehaviour
     {
@@ -19,6 +19,8 @@ namespace Prototype.PlayerController
         private int _xVelHash;
         private int _yVelHash;
         private float _xRotation;
+
+        public bool _stopMoving;
 
         private const float _walkSpeed = 2f;
         private const float _runSpeed = 6f;
@@ -49,6 +51,11 @@ namespace Prototype.PlayerController
         {
             if(!_animator) 
             {return;}
+
+            if(_stopMoving == true)
+            {
+                return;
+            }
 
             float targetSpeed = _inputManager.Run ? _runSpeed : _walkSpeed;
             if(_inputManager.Move == Vector2.zero) 
