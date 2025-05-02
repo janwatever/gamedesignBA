@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Size_Medium
-  - Size_Small
+  - WrongKey
+  - CorrectKey
   layers:
   - Default
   - TransparentFX
@@ -15,7 +15,7 @@ TagManager:
   - UI
   - Player
   - Interactable
-  - 
+  - Puppet_Interactable
   - 
   - 
   - 

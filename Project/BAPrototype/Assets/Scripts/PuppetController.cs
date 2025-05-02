@@ -7,7 +7,7 @@ namespace Prototype.PuppetControl
     public class PuppetController : MonoBehaviour
     {
         [SerializeField] private float AnimBlendSpeed = 8.9f;
-        private Rigidbody _playerRigidBody;
+        private Rigidbody _puppetRB;
         [SerializeField] private Transform CameraRoot;
         [SerializeField] private Transform Camera;
         [SerializeField] private float UpperLimit = -40f;
@@ -18,7 +18,6 @@ namespace Prototype.PuppetControl
         private bool _hasAnimator;
         private int _xVelHash;
         private int _yVelHash;
-        private float _xRotation;
         private Vector3 rotation;
 
         private const float _walkSpeed = 2f;
@@ -29,7 +28,7 @@ namespace Prototype.PuppetControl
         void Start()
         {
             _hasAnimator = TryGetComponent<Animator>(out _animator);
-            _playerRigidBody = GetComponent<Rigidbody>();
+            _puppetRB = GetComponent<Rigidbody>();
             _inputManager = GetComponent<InputManager>();
 
             _xVelHash = Animator.StringToHash("X_Velocity");
@@ -39,7 +38,8 @@ namespace Prototype.PuppetControl
         private void FixedUpdate()
         {
             Move();
-            FacingDirection();
+            //FacingDirection();
+            RotatePlayer();
         }
 
         private void LateUpdate()
@@ -53,47 +53,51 @@ namespace Prototype.PuppetControl
             if(!_animator) 
             {return;}
 
-            float targetSpeed = _inputManager.Run ? _runSpeed : _walkSpeed;
-            if(_inputManager.Move == Vector2.zero) 
-            {targetSpeed = 0.1f;}
+            float targetSpeed = _walkSpeed;
+            if (_inputManager.Move == Vector2.zero)
+            { targetSpeed = 0.1f; }
 
-            _currentVelocity.x = Mathf.Lerp(_currentVelocity.x, _inputManager.Move.x * targetSpeed, AnimBlendSpeed * Time.fixedDeltaTime);
-            _currentVelocity.y = Mathf.Lerp(_currentVelocity.y, _inputManager.Move.y * targetSpeed, AnimBlendSpeed * Time.fixedDeltaTime);
+            _currentVelocity.x = Mathf.Lerp(_currentVelocity.x, _inputManager.Move.x, AnimBlendSpeed * Time.fixedDeltaTime);
+            _currentVelocity.y = Mathf.Lerp(_currentVelocity.y, _inputManager.Move.y, AnimBlendSpeed * Time.fixedDeltaTime);
 
-            var xVelDifference = _currentVelocity.x - _playerRigidBody.linearVelocity.x;
-            var zVelDifference = _currentVelocity.y - _playerRigidBody.linearVelocity.z;
+            Vector3 moveDirection = transform.right * _currentVelocity.x + transform.forward * _currentVelocity.y;
+            
+            Vector3 moveVelocity = moveDirection * targetSpeed;
 
-            _playerRigidBody.AddForce(transform.TransformVector(new Vector3(xVelDifference, 0, zVelDifference)), ForceMode.VelocityChange);
+            var xVelDifference = _currentVelocity.x - _puppetRB.linearVelocity.x;
+            var zVelDifference = _currentVelocity.y - _puppetRB.linearVelocity.z;
 
+            // Preserve current Y velocity for gravity
+            _puppetRB.linearVelocity = new Vector3(moveVelocity.x, _puppetRB.linearVelocity.y, moveVelocity.z);
+            // _puppetRB.AddForce(moveVelocity,ForceMode.VelocityChange);
             _animator.SetFloat(_xVelHash , _currentVelocity.x);
             _animator.SetFloat(_yVelHash , _currentVelocity.y);
         }
 
-        private void CameraMovement()
+        void RotatePlayer()
         {
-            if(!_hasAnimator) return;
+            // Only rotate if there's movement
+            Vector3 flatDirection = new Vector3(_puppetRB.linearVelocity.x, 0, _puppetRB.linearVelocity.z);
 
-            var Mouse_X = _inputManager.Look.x;
-            var Mouse_Y = _inputManager.Look.y;
-            Camera.position = CameraRoot.position;
-
-            _xRotation -= Mouse_Y * MouseSensitivity * Time.deltaTime;
-            _xRotation = Mathf.Clamp(_xRotation, UpperLimit, BottomLimit);
-
-            Camera.localRotation = Quaternion.Euler(_xRotation, 0, 0);
-            transform.Rotate(Vector3.up, Mouse_X * MouseSensitivity * Time.deltaTime);
-        }
-
-        private void FacingDirection()
-        {
-            rotation = new Vector3(_inputManager.Move.x, 0, _inputManager.Move.y);
-            
-            if (rotation != Vector3.zero)
+            if (flatDirection.sqrMagnitude > 0.01f)
             {
-                
-                Quaternion targetRotation = Quaternion.LookRotation(rotation);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+                Quaternion targetRotation = Quaternion.LookRotation(flatDirection);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 3f * Time.fixedDeltaTime);
             }
         }
+        // private void FacingDirection()
+        // {
+        //     rotation = new Vector3(_inputManager.Move.x, 0, _inputManager.Move.y);
+            
+        //     if (rotation != Vector3.zero)
+        //     {
+        //         if(_inputManager.Move.y < 0)
+        //         {
+        //             rotation.z -= _inputManager.Move.y;
+        //         }
+        //         Quaternion targetRotation = Quaternion.LookRotation(rotation);
+        //         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+        //     }
+        // }
     }
 }
