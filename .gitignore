@@ -3,6 +3,11 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+Project/BAPrototype/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+Project/BAPrototype/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+Project/BAPrototype/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+Project/BAPrototype/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
 # Node artifact files
 node_modules/
 dist/
