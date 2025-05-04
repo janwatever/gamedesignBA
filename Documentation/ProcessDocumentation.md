@@ -20,3 +20,25 @@ As I was lazing about enjoying the Easter weekend, I came upon a particular game
 The most difficult part is to start, so instead of thinking up the full details of the game plan, I decided to just take the leap and make something for the coming Playtest Evening next Tuesday. 
 
 I decided to try recreating A Fisherman's Tale's and started out with a basic first person perspective animated player controller where you can see your own body. After trying to recreate the large, medium and small version of the player, I realised that it's incredibly tricky to match up the movement for each version and the scaling has to be very accurate in terms of space and movement velocity across the different scales to make it work correcty. No wonder the VR game restricted the player's movement by making them jump from fix positions to another fix position to overcome that movement and placement matchup.
+
+## 1 May 2025 - Developing the prototype
+***
+I spent the whole day working on the prototype trying to get the core features of the game to work properly. Basically added the function to stop player movement when spacebar is pressed while still being able to look around. Also added the function to drag an interactable object with the player when holding the left mouse button.
+
+## 3 May 2025 - Last push to finish first prototype
+***
+I wanted to finish the 1st prototype as soon as I can so I could push it out to people to playtest the controls I have made and the get the feedback for the general feel of the game. I managed to have that done and sent it out to both my advisors, hopefully it isn't too janky or jarring to play. There are still many things I have to do to develop the main mechanic but here's a list of what I've done and what I should focus to work on next:
+
+Done:
+- Player movement and base interactions with interactable objects
+- when interactable is in Puppet Zone, player can't take interactable
+- Door detects if object is correct before opening
+- Player stops moving when spacebar is pressed
+- Basic start menu and pause menu functionalities
+
+To Do:
+- Fix puppet movement 
+- Puppet should squat when spacebar is not pressed so it doesn't move along with player every moment (unless puzzle intends for it to do so)
+- Fix physics issue when key is picked up it pushes player back
+- Brainstorm level ideas to proceed in the game
+- Brainstorm narrative that ties into the puzzles of the game
