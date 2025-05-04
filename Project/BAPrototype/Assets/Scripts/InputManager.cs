@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
@@ -21,6 +22,8 @@ namespace Prototype.Manager
         private InputAction _stopMove;
         private InputAction _interactAction;
 
+        private int wasPressed = 0;
+
         private void Awake()
         {
             _currentMap = PlayerInput.currentActionMap;
@@ -42,9 +45,8 @@ namespace Prototype.Manager
             _stopMove.canceled += onStopMove;
             _interactAction.canceled += onInteract;
 
-
         }
-        
+
         private void onMove(InputAction.CallbackContext context)
         {
             Move = context.ReadValue<Vector2>();
@@ -65,6 +67,7 @@ namespace Prototype.Manager
         {
             Interact = context.ReadValueAsButton();
         }
+
         private void OnEnable()
         {
             _currentMap.Enable();
