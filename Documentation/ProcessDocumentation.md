@@ -30,8 +30,8 @@ I spent the whole day working on the prototype trying to get the core features o
 I wanted to finish the 1st prototype as soon as I can so I could push it out to people to playtest the controls I have made and the get the feedback for the general feel of the game. I managed to have that done and sent it out to both my advisors, hopefully it isn't too janky or jarring to play. There are still many things I have to do to develop the main mechanic but here's a list of what I've done and what I should focus to work on next:
 
 Done:
-- Player movement and base interactions with interactable objects
-- when interactable is in Puppet Zone, player can't take interactable
++ Player movement and base interactions with interactable objects
++ when interactable is in Puppet Zone, player can't take interactable
 - Door detects if object is correct before opening
 - Player stops moving when spacebar is pressed
 - Basic start menu and pause menu functionalities
