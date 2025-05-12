@@ -1,0 +1,5 @@
+newmtl RenderTexture
+map_Kd NextZonePreview.renderTexture
+Kd 1 1 1
+d 1
+
