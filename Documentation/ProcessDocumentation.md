@@ -42,3 +42,7 @@ To Do:
 - Fix physics issue when key is picked up it pushes player back
 - Brainstorm level ideas to proceed in the game
 - Brainstorm narrative that ties into the puzzles of the game
+
+## 7 May 2025 - Revamp entire prototype
+***
+Had a meeting with my first advisor and got some valuable feedback on the project's control and overall direction its heading. Currently the movement of the puppet is too jarring with the Player's movement and there was confusion how to control the puppet. 
