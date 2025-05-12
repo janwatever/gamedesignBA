@@ -3,6 +3,8 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+
+
 Project/BAPrototype/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
 Project/BAPrototype/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
 Project/BAPrototype/Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
@@ -153,3 +155,6 @@ Project/BAPrototype/[Aa]ssets/[Ss]treamingAssets/aa/*
 
 Project/BAProject_URP/[Aa]ssets/[Ss]treamingAssets/aa.meta
 Project/BAProject_URP/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Ignore updates on BA Prototype
+Project/BAPrototype
