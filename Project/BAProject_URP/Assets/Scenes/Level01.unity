@@ -1786,6 +1786,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 52951384}
     m_Modifications:
+    - target: {fileID: 152490970739747052, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 185804178080189334, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -1865,6 +1869,10 @@ PrefabInstance:
     - target: {fileID: 6145710662554753892, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Name
       value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202081426050354092, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7745376190948795947, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Mesh
@@ -2938,6 +2946,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1622148752}
     m_Modifications:
+    - target: {fileID: 152490970739747052, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 185804178080189334, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -3017,6 +3029,10 @@ PrefabInstance:
     - target: {fileID: 6145710662554753892, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Name
       value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202081426050354092, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7745376190948795947, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Mesh
@@ -5755,6 +5771,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 255260463}
     m_Modifications:
+    - target: {fileID: 152490970739747052, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 185804178080189334, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5834,6 +5854,10 @@ PrefabInstance:
     - target: {fileID: 6145710662554753892, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Name
       value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202081426050354092, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7745376190948795947, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Mesh
@@ -9837,6 +9861,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 789431468}
     m_Modifications:
+    - target: {fileID: 152490970739747052, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 185804178080189334, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -9896,6 +9924,10 @@ PrefabInstance:
     - target: {fileID: 6145710662554753892, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Name
       value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202081426050354092, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7745376190948795947, guid: 5f426f100119c4e498ccbe4f97fa01a1, type: 3}
       propertyPath: m_Mesh
