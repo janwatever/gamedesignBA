@@ -250,6 +250,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c24bad4cd9774fe41925757521741543, type: 2}
+    - target: {fileID: -7511558181221131132, guid: a6d17ca5cf5449d49b5d6f1d64688257, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: adc1fdc7857f9094c8b9e5efd040174f, type: 2}
     - target: {fileID: 919132149155446097, guid: a6d17ca5cf5449d49b5d6f1d64688257, type: 3}
       propertyPath: m_Name
       value: keyholeMesh_medium
@@ -324,6 +328,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c24bad4cd9774fe41925757521741543, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 53c0f3b53c36eb944aba014454ac0443, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: adc1fdc7857f9094c8b9e5efd040174f, type: 2}
     - target: {fileID: 919132149155446097, guid: 53c0f3b53c36eb944aba014454ac0443, type: 3}
       propertyPath: m_Name
       value: keyholeMesh_big
@@ -394,6 +402,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c24bad4cd9774fe41925757521741543, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 1c0057096c04b384f98cca9859f69e6f, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: adc1fdc7857f9094c8b9e5efd040174f, type: 2}
     - target: {fileID: 919132149155446097, guid: 1c0057096c04b384f98cca9859f69e6f, type: 3}
       propertyPath: m_Name
       value: keyholeMesh_small
