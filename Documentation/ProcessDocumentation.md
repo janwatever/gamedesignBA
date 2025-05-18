@@ -107,4 +107,4 @@ I narrowed it down to 6 rooms for the entire game. This can be reduced or expand
     + The corridor between the keys and scales room
     + A corridor between the scales and mirror room
     + A corridor between the mirror room and the final area.
-6. **Judgement Room** This isn't a room and more of a cutscene that reveals the player's true circumstances in the game.
+6. **Judgement Room** -- This isn't a room and more of a cutscene that reveals the player's true circumstances in the game.
