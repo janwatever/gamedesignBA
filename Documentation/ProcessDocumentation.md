@@ -45,4 +45,66 @@ To Do:
 
 ## 7 May 2025 - Revamp entire prototype
 ***
-Had a meeting with my first advisor and got some valuable feedback on the project's control and overall direction its heading. Currently the movement of the puppet is too jarring with the Player's movement and there was confusion how to control the puppet. 
+Had a meeting with Csongor and got some valuable feedback on the project's control and overall direction its heading. Currently the movement of the puppet is too jarring with the Player's movement and there was confusion how to control the puppet. Had some feedback from others as well voicing similar issues. There was contradicting opinions on the puppet movement, some mentioned that it is incredibly confusing and hard to control, while others mentioned that the challenge is rather fun. While I always enjoy the idea of "its not a bug, its a feature", for this particular scenario I do think it should be reworked to provide a more controlled intended janky-ness instead of an unintended one.
+
+I decided to rework on the core movement systems and scrap the entire prototype due to some render pipeline shenanigans in Unity that causes the project to load incredbily slow during play mode. I opened a completely new project and stuck with URP as the main render pipeline and rebuild all imported assets to fit within it. I've also decided to build the game solely using visual scripting and not C# due to the speed and convenience it offers.
+
+The main player's movement still uses some C# script that I got from the unity's official sample asset, but that is as far as it goes. The scripts are well documented and easy to read and dissect its parts and thus making it easy for me to make changes. Everything else on the other hand would be done in visual scripting from here on out.
+
+Project's technical outline:
++ URP render pipeline
++ Code in visual scripts only
+
+## 8 May 2025 - Update on some brainstorm scribbles
+***
+![brainstorm scribbles](DocumentationImages/ProjectBrainstorm.jpg)
+I added new ideas on the right side of the board with all the yellow stars, highlighting the core mechanics and what I need to do to accomplish it. I decided to focus on the theme of control in this game. I want the players to question who truly has control within the game. Though the player has the ability to manipulate the contents of the game and the characters, are the actions they take really their own? or are they just a mere pawn on the board? 
+
+These are the kind of questions I would like to convey within the game, though I am rather worried of the impending scope creep this might result in trying to achieve it. :'D
+
+## 12 May 2025 - A change of pace
+***
+I decided to head to the university to work on my project for a change of pace and hoping if I place my brain in a different environment I would be able to get fresher ideas on how to proceed forward with the project. After spending the weekend fully scrapping my prototype and starting anew, I managed to get it towards the same state as the previous prototype, but now with lesser bugs and simplified control systems! I brought it on to Florian for a quick playtest and had some interesting feedback on the game's puzzle and overall concept.
+
+Here's a rough summary from the playtest session:
++ The concept of having different sized keys and different sized keyholes needed to be pushed further visually for players to notice their differences
++ Understanding the need to swap the keys amongst the different scaled versions of yourself was not the easiest thing to pick up on
++ The concept was interesting, due to the antique key and keyholes, the game's theme seem to fit a more fantasy genre instead of sci-fi (eg. portal style, which was my initial idea brought on by the style of the sample assets I was using)
++ Having the player control multiple characters at once with one set of control is not bad, having different ways to control the puppets would be interesting
++ Fourth wall breaking elements like the player looking up and seeing the projection of themselves through the webcam would sell that idea more
+
+After contemplating these feedback, it kind of spurred me to work on the narrative elements of the game. Ideas of the story I needed to tell and how to tell that story rolled in my head for awhile and I came up with a base premise:
+> A dollmaker obssessed with perfecting his craft, steals the 'souls' of players who wander into his domain and make them into puppets for his collection. He tricks players with the help of his spider familiar by pretending to help them escape, just for them to be lead into his trap at the end.
+
+Basically the story starts by the player assuming they were turned into a puppet and need to turn themselves back to escape. They are lead by a narrator pretending to be their conscience (think Jiminy Cricket in Pinnochio) who explains their situation and help them proceed through the game.
+
+![story draft](DocumentationImages/StoryDraft.jpg)
+
+I drafted some additional flavour mechanics in the game where the narrator would ask seemingly strange and intrusive questions about the player's original appearance (before they got turned into a puppet). Simple dialogue options are presented to get information on how the player actually looks to customize the look of their puppet at the end.
+
+## 15 May 2025 - Blocking out levels according to storybeats
+***
+After being invigorated by the narrative for this game, I started getting assets to start blocking out levels following the storybeats. I had a rough idea in mind for the player to start in a storage room, as if they were tossed aside and forgotten.
+
+![storage room blockout](DocumentationImages/NarrativeStartzoneBlockout.jpg)
+
+I continued to work on fixing some bugs that causes discrepancies between the different scaled version of the player. I still have not fully work out all the kinks as there is a problem with matching up the pickup range for the different scaled versions to the player without causing unneccessary interactions.
+
+## 18 May 2025 - Getting low with some beats
+***
+I added the ability to crouch down to grab objects that the player has dropped on the ground to limit the pickup range for each version so they are not able to interact to anything beyond their realm except for the player. 
+
+Progress has been slow this week as most of my time I was brainstorming on the storybeats of the game and narrowing down the scope to make it more achievable while explaining the narrative in its entirety. 
+
+![storybeats draft](DocumentationImages/Storybeats.jpg)
+I narrowed it down to 6 rooms for the entire game. This can be reduced or expanded further with more puzzle rooms but so far my brain was only able to come up with two puzzles.
+
+1. **Storage Room** -- the starting area, where the narrator will explain why they are here and how they must get out before its too late.
+2. **Room of Keys** -- a tutorial area to showcase different scaled keys and keyholes and the need to match them to proceed forward.
+3. **Room of Scales** -- Two scaled versions of the player (who copies the players movement) and the room exists and the player has to get the correct key to move forward. Exchanging the key from the different scaled version of the player is how to proceed forward.
+4. **Mirror Room** -- A mirrored version of the room exists on the other side of a glass pane, but not everything that is within the mirrored room exists in the player's room. The player has to manipulate a puppet within their room to open the door in the mirrored room to unlock their own door.
+5. **Corridors of Secrets** -- I picture this as an area between puzzle rooms for dialogues to happen, the narrator would ask strange questions about the player and the player can answer them. There would be a total of 3 corridors:
+    + The corridor between the keys and scales room
+    + A corridor between the scales and mirror room
+    + A corridor between the mirror room and the final area.
+6. **Judgement Room** This isn't a room and more of a cutscene that reveals the player's true circumstances in the game.
