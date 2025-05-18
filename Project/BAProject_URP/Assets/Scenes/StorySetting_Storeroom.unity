@@ -267,7 +267,7 @@ MonoBehaviour:
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 1.15}
   m_Size: {x: 5.09, y: 4, z: 2.3}
-  m_FadeFactor: 1
+  m_FadeFactor: 0.72
 --- !u!4 &36472741
 Transform:
   m_ObjectHideFlags: 0
@@ -729,7 +729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &164213812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2688,7 +2688,7 @@ MonoBehaviour:
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 1.15}
   m_Size: {x: 2.89, y: 0.93, z: 2.3}
-  m_FadeFactor: 1
+  m_FadeFactor: 0.694
 --- !u!4 &610276589
 Transform:
   m_ObjectHideFlags: 0
@@ -4847,7 +4847,7 @@ MonoBehaviour:
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 0.675}
   m_Size: {x: 1.47, y: 1.9, z: 1.35}
-  m_FadeFactor: 1
+  m_FadeFactor: 0.642
 --- !u!4 &1168258865
 Transform:
   m_ObjectHideFlags: 0
@@ -6756,7 +6756,7 @@ MonoBehaviour:
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 1.175}
   m_Size: {x: 5.09, y: 6.8, z: 2.35}
-  m_FadeFactor: 1
+  m_FadeFactor: 0.621
 --- !u!4 &1851581260
 Transform:
   m_ObjectHideFlags: 0
@@ -6889,7 +6889,7 @@ MonoBehaviour:
     - {fileID: 1958707219}
     - {fileID: 1597337630}
     - {fileID: 479868200}
-    - {fileID: 2025946168}
+    - {fileID: 0}
 --- !u!4 &1867235197
 Transform:
   m_ObjectHideFlags: 0
@@ -8009,7 +8009,7 @@ MonoBehaviour:
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 0.705}
   m_Size: {x: 2.25, y: 1.9, z: 1.41}
-  m_FadeFactor: 1
+  m_FadeFactor: 0.621
 --- !u!4 &2017452584
 Transform:
   m_ObjectHideFlags: 0
@@ -8025,11 +8025,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -10.107, y: 20.913, z: 23.829}
---- !u!1 &2025946168 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4711223480015253195, guid: 8e7835d817aeb54408e504b992dc2681, type: 3}
-  m_PrefabInstance: {fileID: 7139864894625120689}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2092279025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19142,6 +19137,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1342349555088733386, guid: 8e7835d817aeb54408e504b992dc2681, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1880002
+      objectReference: {fileID: 0}
     - target: {fileID: 1952387261793581829, guid: 8e7835d817aeb54408e504b992dc2681, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

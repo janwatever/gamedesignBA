@@ -1135,7 +1135,7 @@ MonoBehaviour:
   GroundLayers:
     serializedVersion: 2
     m_Bits: 1
-  CinemachineCameraTarget: {fileID: 0}
+  CinemachineCameraTarget: {fileID: 5837091750408893532}
   TopClamp: 60
   BottomClamp: -40
 --- !u!114 &5885216827943657505
@@ -1543,6 +1543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3372438420473734770}
   - component: {fileID: 993379767960669810}
+  - component: {fileID: 7997395514632989876}
   m_Layer: 3
   m_Name: PlayerCameraRoot
   m_TagString: CinemachineTarget
@@ -1581,6 +1582,22 @@ MonoBehaviour:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"YPosition","value":{"$content":1.677,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!114 &7997395514632989876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837091750408893532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 41d71b1fe69157148b71efd5e4c3a29e, type: 2}
 --- !u!1 &5930158855145388821
 GameObject:
   m_ObjectHideFlags: 0
