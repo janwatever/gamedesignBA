@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6145710662554753892}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 2.12, z: 5.93}
+  m_LocalPosition: {x: 0.03, y: 1.58, z: 5.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a6d17ca5cf5449d49b5d6f1d64688257, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.017
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a6d17ca5cf5449d49b5d6f1d64688257, type: 3}
       propertyPath: m_LocalRotation.w
@@ -255,6 +255,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: adc1fdc7857f9094c8b9e5efd040174f, type: 2}
+    - target: {fileID: -5754084199372789682, guid: a6d17ca5cf5449d49b5d6f1d64688257, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 6046649486180710005, guid: 4e812153b851f1147b0d2c349080ce58, type: 3}
     - target: {fileID: 919132149155446097, guid: a6d17ca5cf5449d49b5d6f1d64688257, type: 3}
       propertyPath: m_Name
       value: keyholeMesh_medium
@@ -295,7 +299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 53c0f3b53c36eb944aba014454ac0443, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 53c0f3b53c36eb944aba014454ac0443, type: 3}
       propertyPath: m_LocalRotation.w
@@ -333,6 +337,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: adc1fdc7857f9094c8b9e5efd040174f, type: 2}
+    - target: {fileID: -5754084199372789682, guid: 53c0f3b53c36eb944aba014454ac0443, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -4900951229475410483, guid: cc2f9bac5cb50f44aa51a5e27fba5fcf, type: 3}
     - target: {fileID: 919132149155446097, guid: 53c0f3b53c36eb944aba014454ac0443, type: 3}
       propertyPath: m_Name
       value: keyholeMesh_big
@@ -369,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c0057096c04b384f98cca9859f69e6f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.018
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c0057096c04b384f98cca9859f69e6f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -407,6 +415,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: adc1fdc7857f9094c8b9e5efd040174f, type: 2}
+    - target: {fileID: -5754084199372789682, guid: 1c0057096c04b384f98cca9859f69e6f, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5942498296822615591, guid: ed35d5b3d9bb1bb40ba42c9f73a09939, type: 3}
     - target: {fileID: 919132149155446097, guid: 1c0057096c04b384f98cca9859f69e6f, type: 3}
       propertyPath: m_Name
       value: keyholeMesh_small
