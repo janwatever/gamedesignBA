@@ -8,17 +8,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: aec949abbe9748548afd631ae0d0abf8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: 3fa558b8745c3094781d46cef336484a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level01.unity
     guid: ca3a7c121ff852044850617453b6b7f9
   - enabled: 1
     path: Assets/Scenes/Tutorial - Alternate.unity
     guid: f4ec9bb7d2d209049aa64fe7c5f342d0
   - enabled: 1
-    path: Assets/Scenes/Level01 - Alternate.unity
+    path: Assets/Scenes/Level_MirrorRoom.unity
+    guid: 0dc0a250aab277240bd08e3dbecbaa7b
+  - enabled: 1
+    path: Assets/Scenes/Level_MedToSmall.unity
     guid: a19e6ae7749ce734093b524e70c118d1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
