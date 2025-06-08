@@ -108,3 +108,27 @@ I narrowed it down to 6 rooms for the entire game. This can be reduced or expand
     + A corridor between the scales and mirror room
     + A corridor between the mirror room and the final area.
 6. **Judgement Room** -- This isn't a room and more of a cutscene that reveals the player's true circumstances in the game.
+
+## 20 May 2025 - Organisation and Cleanup
+***
+I added an alternate level for the different scaled version level with a layout suggested by Florian previously. I've also did a cleanup of the different prefabs and mechanics, basically made them more modular and easy to implement within new levels.
+
+## 3 June 2025 - Playtest Evening Feedback
+***
+I added a mirror room level in the game where the player has to grab a key that only exists in the puppet's room and learn to pass the key back and forth. I've also compiled some standouts during the playtesting session in university.
+
+Feedbacks:
++ Most people have difficulty understanding the mirroring mechanic
++ People tend to click multiple times to get the key whenever they can't get it the first try, so separating pickup and drop controls would be better
++ Some people think they had to unlock the door for the puppet as well to proceed forward, even if their own door has already been unlocked
++ Only one person managed to look up in the different scale levels and most don't, so separating them would present better clarity.
++ Someone suggested a key dropping SFX to indicate the key has been successfully passed to your area
++ People generally enjoy the concept of the game and think its cool
+
+Suggestions:
++ Pressure plates level for that asyncronicity effect, having player use a pressure plate and manipulate the puppet without themselves moving
++ Move yourself into a different scaled dimension to proceed instead of just passing keys around
+
+## 8 June 2025 - Contemplation
+***
+I decided to work on fixing the raycasting issue that the Player's pickup mechanic
