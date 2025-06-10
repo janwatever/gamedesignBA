@@ -131,4 +131,8 @@ Suggestions:
 
 ## 8 June 2025 - Contemplation
 ***
-I decided to work on fixing the raycasting issue that the Player's pickup mechanic
+I decided to work on fixing the raycasting issue that the Player's pickup mechanic by changing it to a sphere cast instead to get a wider radius to pickup objects. I've also added a mechanic of an input and output box to transfer keys between different scaled versions of the room.
+
+## 9 June 2025 - Lights and Cameras
+***
+I decided to work on the story setting level and added a timeline element to create an opening cutscene.
