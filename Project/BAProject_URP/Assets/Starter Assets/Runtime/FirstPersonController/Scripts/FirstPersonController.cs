@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 #endif
 
 namespace StarterAssets
@@ -11,6 +12,7 @@ namespace StarterAssets
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
+        
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
@@ -18,6 +20,8 @@ namespace StarterAssets
 		public float SprintSpeed = 6.0f;
 		[Tooltip("Rotation speed of the character")]
 		public float RotationSpeed = 1.0f;
+        public GameObject _mouseSensitivityGO;
+        private Slider mouseSensitivitySlider;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
 
@@ -98,43 +102,47 @@ namespace StarterAssets
 
 		private void Awake()
 		{
-			// get a reference to our main camera
-			if (_mainCamera == null)
-			{
-				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+            // get a reference to our main camera
+            if (_mainCamera == null)
+            {
+                _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+                _mouseSensitivityGO = GameObject.FindGameObjectWithTag("SliderUI");
 			}
 		}
 
-		private void Start()
-		{
-			_hasAnimator = TryGetComponent(out _animator);
-			_controller = GetComponent<CharacterController>();
-			_input = GetComponent<StarterAssetsInputs>();
+        private void Start()
+        {
+            _hasAnimator = TryGetComponent(out _animator);
+            _controller = GetComponent<CharacterController>();
+            _input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM
-			_playerInput = GetComponent<PlayerInput>();
+            _playerInput = GetComponent<PlayerInput>();
 #else
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
 #endif
 
-			AssignAnimationIDs();
+            AssignAnimationIDs();
 
-			// reset our timeouts on start
-			_jumpTimeoutDelta = JumpTimeout;
-			_fallTimeoutDelta = FallTimeout;
+            // reset our timeouts on start
+            _jumpTimeoutDelta = JumpTimeout;
+            _fallTimeoutDelta = FallTimeout;
+
+            mouseSensitivitySlider = _mouseSensitivityGO.GetComponent<Slider>();
 		}
 
-		private void Update()
-		{
-			_hasAnimator = TryGetComponent(out _animator);
+        private void Update()
+        {
+            _hasAnimator = TryGetComponent(out _animator);
 
-			Crouch();
-			JumpAndGravity();
-			GroundedCheck();
-			Move();
+            Crouch();
+            JumpAndGravity();
+            GroundedCheck();
+            Move();
 		}
 
 		private void LateUpdate()
 		{
+            mouseSensitivitySlider.value = RotationSpeed;
 			CameraRotation();
 		}
 
