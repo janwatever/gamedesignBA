@@ -6735,11 +6735,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"playerCam","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Camera,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"renderTexPlane","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"renderTexPlane","value":null,"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1249396985}
-    - {fileID: 0}
 --- !u!114 &1196967755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9693,6 +9692,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1672964321874265936, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672964321874265936, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2249077457942727494, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
       propertyPath: m_Name
       value: optionsMenu
@@ -9700,6 +9707,18 @@ PrefabInstance:
     - target: {fileID: 2249077457942727494, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127893059831024718, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127893059831024718, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127893059831024718, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9166469720505781715, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
       propertyPath: m_Pivot.x
