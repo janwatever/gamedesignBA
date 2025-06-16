@@ -1175,6 +1175,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1672964321874265936, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672964321874265936, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2249077457942727494, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
       propertyPath: m_Name
       value: optionsMenu
@@ -1182,6 +1190,18 @@ PrefabInstance:
     - target: {fileID: 2249077457942727494, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127893059831024718, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127893059831024718, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127893059831024718, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9166469720505781715, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
       propertyPath: m_Pivot.x
@@ -2015,6 +2035,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &305501836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1312150730994652140, guid: bea3e51a1cd975445aa400a82571bafe, type: 3}
+  m_PrefabInstance: {fileID: 113329472}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &342205647
 Mesh:
   m_ObjectHideFlags: 0
@@ -6705,6 +6736,10 @@ PrefabInstance:
       propertyPath: BottomClamp
       value: -60
       objectReference: {fileID: 0}
+    - target: {fileID: 7593961049489388840, guid: 8e7835d817aeb54408e504b992dc2681, type: 3}
+      propertyPath: _mouseSensitivityGO
+      value: 
+      objectReference: {fileID: 305501836}
     - target: {fileID: 7593961049489388840, guid: 8e7835d817aeb54408e504b992dc2681, type: 3}
       propertyPath: CinemachineCameraTarget
       value: 
