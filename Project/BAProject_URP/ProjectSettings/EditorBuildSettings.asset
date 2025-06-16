@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: aec949abbe9748548afd631ae0d0abf8
+  - enabled: 1
+    path: Assets/Scenes/StorySetting_Storeroom.unity
+    guid: c59f6a8bf1923184799f98ab74807a71
+  - enabled: 1
+    path: Assets/Scenes/StorySetting_RoomOfKeys.unity
+    guid: 1be26fb8ebc8e2f4b84144f51fb84e64
   - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: 3fa558b8745c3094781d46cef336484a

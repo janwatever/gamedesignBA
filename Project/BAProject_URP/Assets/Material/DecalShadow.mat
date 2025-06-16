@@ -129,7 +129,7 @@ Material:
     - _Intensity: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
-    - _Opacity_Intensity: 0.56
+    - _Opacity_Intensity: 0.68
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1

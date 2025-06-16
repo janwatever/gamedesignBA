@@ -2445,7 +2445,9 @@ MonoBehaviour:
   m_text: 'WASD to move.
 
 
-    Click Left Mouse button to grab item. Click again
+    Left Mouse button to grab item.
+
+    Right Mouse button
     to drop item.
 
 
