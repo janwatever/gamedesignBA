@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 #endif
 
 namespace StarterAssets
@@ -20,8 +20,7 @@ namespace StarterAssets
 		public float SprintSpeed = 6.0f;
 		[Tooltip("Rotation speed of the character")]
 		public float RotationSpeed = 1.0f;
-        public GameObject _mouseSensitivityGO;
-        private Slider mouseSensitivitySlider;
+        public Slider _mouseSensitivityGO;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
 
@@ -106,7 +105,6 @@ namespace StarterAssets
             if (_mainCamera == null)
             {
                 _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-                _mouseSensitivityGO = GameObject.FindGameObjectWithTag("SliderUI");
 			}
 		}
 
@@ -126,8 +124,6 @@ namespace StarterAssets
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
-
-            mouseSensitivitySlider = _mouseSensitivityGO.GetComponent<Slider>();
 		}
 
         private void Update()
@@ -142,7 +138,7 @@ namespace StarterAssets
 
 		private void LateUpdate()
 		{
-            mouseSensitivitySlider.value = RotationSpeed;
+            RotationSpeed = _mouseSensitivityGO.value;
 			CameraRotation();
 		}
 
