@@ -60,7 +60,7 @@ Thumbs.db
 *.mov
 *.wmv
 
-Resources/
+Resources_Theory/
 
 # This .gitignore file should be placed at the root of your Unity project directory
 #
