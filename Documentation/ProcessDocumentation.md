@@ -145,4 +145,7 @@ There was a feedback of adding a sound effect to the key hitting the floor to in
 
 Progress was also made to continue set dressing the tutorial and mirror room levels. Adding assets and mood lighting to the game scenes along with creating prefabs to allow me to quickly set up the next level with reoccuring asset sets.
 
+![tutorial setdress](DocumentationImages/TutorialSetDress.png)
+![mirrorroom setdress](DocumentationImages/MirrorRoomSetDress.png)
+
 I did face some difficulty with the Mirror Room level as the idea of that room was added purely to introduce the mechanic of passing over keys across different levels. I struggle with finding a story-related purpose the room contains and a theme I could refer to make it more interesting.
