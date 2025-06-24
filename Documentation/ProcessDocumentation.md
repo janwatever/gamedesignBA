@@ -135,4 +135,14 @@ I decided to work on fixing the raycasting issue that the Player's pickup mechan
 
 ## 9 June 2025 - Lights and Cameras
 ***
-I decided to work on the story setting level and added a timeline element to create an opening cutscene.
+I decided to work on the story setting level and added a timeline element to create an opening cutscene. Everything is still scene specific and I should work on creating a modular workflow for implementing cutscenes in each level.
+
+I am still contemplating how to end the game in a satisfying way as the common feedback for the game is people wanting to play more levels, they are interested and like the concept of the game, but they want to see more and I personally struggle coming up with interesting puzzle designs for the game and I had to weigh in on the scope of the project and the feeling I wanted to convey to fit my thesis.
+
+## 17 June 2025 - Dressing up
+***
+There was a feedback of adding a sound effect to the key hitting the floor to indicate that a key has successfully passed on to the player's side of the arena.
+
+Progress was also made to continue set dressing the tutorial and mirror room levels. Adding assets and mood lighting to the game scenes along with creating prefabs to allow me to quickly set up the next level with reoccuring asset sets.
+
+I did face some difficulty with the Mirror Room level as the idea of that room was added purely to introduce the mechanic of passing over keys across different levels. I struggle with finding a story-related purpose the room contains and a theme I could refer to make it more interesting.
