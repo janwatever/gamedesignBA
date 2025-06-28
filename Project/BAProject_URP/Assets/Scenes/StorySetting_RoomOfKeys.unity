@@ -3970,11 +3970,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'WASD to move yourself and puppet.
+  m_text: 'WASD to move yourself.
 
 
-    Click Left Mouse button to grab
-    object
+    Left Mouse button to grab object.
+
+    Right
+    Mouse button to drop object.
 
 
     <ESC> For menu options'
