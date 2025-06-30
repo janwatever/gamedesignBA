@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Authorizer
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":136.8,"y":-11.9192},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-148.0,"y":-104.0},"guid":"b7835cf1-4aa4-4e59-acab-d1c74986b587","$version":"A","$type":"Unity.VisualScripting.Start","$id":"9"},{"chainable":false,"parameterNames":["deviceName"],"member":{"name":".ctor","parameterTypes":["System.String"],"targetType":"UnityEngine.WebCamTexture","targetTypeName":"UnityEngine.WebCamTexture","$version":"A"},"defaultValues":{"%deviceName":{"$content":"","$type":"System.String"}},"position":{"x":388.0,"y":-71.0},"guid":"da833df7-b9d3-4103-9571-dd7d2e8b0957","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"11"},{"chainable":false,"parameterNames":["mode"],"member":{"name":"HasUserAuthorization","parameterTypes":["UnityEngine.UserAuthorization"],"targetType":"UnityEngine.Application","targetTypeName":"UnityEngine.Application","$version":"A"},"defaultValues":{"%mode":{"$content":"WebCam","$type":"UnityEngine.UserAuthorization"}},"position":{"x":37.0,"y":-129.0},"guid":"b7480263-f162-4003-bd18-6e48ef8f6d4c","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"15"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"6203df8d-6ecd-4fdf-a9ba-2482595eac40","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"exit","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"06be53dc-1a85-4d9a-8d76-2fddd3827ce2","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}'
+    _objectReferences: []
