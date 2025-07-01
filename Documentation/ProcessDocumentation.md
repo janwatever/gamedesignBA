@@ -1,8 +1,8 @@
 # Project Description 
-***
-This project is my attempt at implementing outmersive elements highlighted in my thesis to showcase the practical usage of the term and consoildating it into a short narrative puzzle game.
+This project is my attempt at implementing outmersive elements highlighted in my thesis to showcase the practical usage of the term and consoildating it into a short narrative puzzle game. The game would touch upon two aspects of outmersion: mechanical outmersion and fictional outmersion. The main goal is to have players contemplate and critically analyze the game beyond the game itself.
 
 # Process Documentation
+
 ## 16 April 2025 - The beginning
 ***
 It all started with a late night rush of desperation to come with ideas to present for a meeting with advisors that prompted me to begin furiously scribbling down the first things in my head.
