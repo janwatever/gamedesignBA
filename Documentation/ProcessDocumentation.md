@@ -1,9 +1,15 @@
+# Project Description 
+***
+This project is my attempt at implementing outmersive elements highlighted in my thesis to showcase the practical usage of the term and consoildating it into a short narrative puzzle game.
+
 # Process Documentation
 ## 16 April 2025 - The beginning
 ***
 It all started with a late night rush of desperation to come with ideas to present for a meeting with advisors that prompted me to begin furiously scribbling down the first things in my head.
 
 ![initial scribbles](DocumentationImages/InitialScribbles.jpg)
+
+I personally enjoyed the idea to create a rhythm game for the project as it has been on my personal bucket list for awhile. But I still tried to push for 2 more ideas so I don't fall into a narrow hold when brainstorming.
 
 ## 17 April 2025 - Brainstorming
 ***
@@ -149,3 +155,20 @@ Progress was also made to continue set dressing the tutorial and mirror room lev
 ![mirrorroom setdress](DocumentationImages/MirrorRoomSetDress.png)
 
 I did face some difficulty with the Mirror Room level as the idea of that room was added purely to introduce the mechanic of passing over keys across different levels. I struggle with finding a story-related purpose the room contains and a theme I could refer to make it more interesting.
+
+## 28 June 2025 - Further Dressing
+***
+I continued my progress in set dressing the remaining levels and tried to brainstorm possible ways to end the game in an impactful way. 
+
+Harking back to the rough storyboard I envision awhile back, I decided to work on building the space for the final cutscene that reveals the true nature of the game.
+One where the player finds out that the narrator who has been perceived as someone who is helping them escape their strange confinement was actually leading them into their demise.
+
+![finalCutscene setdress](DocumentationImages/FinalCutsceneSetDress.jpg)
+
+I blocked out the room, created, rigged and animated the True Puppeteer and I'm currently blocking out the camera angle as well. I wonder if it is getting too complex for me to achieve as I am running out of time to finish this project.
+
+## 1 July 2025 - Say Cheese~
+***
+I incorporated the player's webcam into the final cutscene to showcase the True Puppeteer grabbing the player's "soul" for their next creation. I initially wanted to be able to customize the final creation to look like the player themselves but that requires quite a number of prompts before in the game to gather enough information too create them.
+
+There was the idea of a big spider that is the narrator in the game to appear in the final cutscene as well but creating, rigging and animating them within this short time frame seems to be too steep of a climb to accomplish.
