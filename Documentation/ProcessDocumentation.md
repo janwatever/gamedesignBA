@@ -1,11 +1,10 @@
-# Project Description 
+# Abstract
 This project is my attempt at implementing outmersive elements highlighted in my thesis to showcase the practical usage of the term and consoildating it into a short narrative puzzle game. The game would touch upon two aspects of outmersion: mechanical outmersion and fictional outmersion. The main goal is to have players contemplate and critically analyze the game beyond the game itself.
 
 # Process Documentation
-
 ## 16 April 2025 - The beginning
 ***
-It all started with a late night rush of desperation to come with ideas to present for a meeting with advisors that prompted me to begin furiously scribbling down the first things in my head.
+It all started with a late night rush of desperation to come up with ideas to present for a meeting with advisors that prompted me to begin furiously scribbling down the first things in my head.
 
 ![initial scribbles](DocumentationImages/InitialScribbles.jpg)
 
@@ -172,3 +171,17 @@ I blocked out the room, created, rigged and animated the True Puppeteer and I'm 
 I incorporated the player's webcam into the final cutscene to showcase the True Puppeteer grabbing the player's "soul" for their next creation. I initially wanted to be able to customize the final creation to look like the player themselves but that requires quite a number of prompts before in the game to gather enough information too create them.
 
 There was the idea of a big spider that is the narrator in the game to appear in the final cutscene as well but creating, rigging and animating them within this short time frame seems to be too steep of a climb to accomplish.
+
+# Conclusion
++ How do you answer your research question based on your preparation (thesis) and execution (project)? and Why?
++ Is it possible to generalised on your result? Why?
+
+The question of my research topic was trying to figure out what is the fourth-wall of a videogame and how do developers design a game to break it. Within my thesis, I touched upon the commonly used notion of the magic circle coined by Salen and Zimmerman that many have used to describe the fourth wall in videogames and how contentious the metaphor turned out to be. Due to that contentious point, I ended up going through different variations that others have proposed to describe the fourth wall in videogames and landed on the definition of Outmersion coined by Frasca. Outmersion is the critical distancing of players when they engage with a videogame in order to analyse and evaluate it. The emphasis is on the player's perspective being outside of the game.
+
+Frasca raised 3 categories for outmersion: mechanical, fictional, and meta-outmersion. In this project, I was only able to touch upon 2 categories out of 3 due to the development time limitations. I managed to execute the mechanical aspect of outmersion by creating a puzzle game that requires players to critically analyze the game beyonnd the confines of the game itself, drawing solutions from previous experiences outside of the game to solve the game's puzzles and progress the game.
+
+The fictional aspect of outmersion is a little trickier as examples of games that manage to incorporate this is incredibly large due to the need to have a rather extensive time to set up a premise and then pull the rug under the player at the end. I tried to tackle it by simplifying the narrative of the game into its core components. I introduced a narrator at the beginning of the game who instructs the player to find a way out of their captivity, basically setting up a premise for the narrator to lead the player forward, hoping to escape. The story ends in a twist as the final cutscene of the game shows no exit at all, and the player was lead right into a trap, turned into one of the many puppets they have seen all throughout the game. This twist at the end would sufficiently invoke the outmersive aspect, as the player would have to analyze their in-game role being different from their intial understanding.
+
+Meta-outmersion tends to be in the favour of educational games and games that incite deliberate contemplation that needs far more time outside of the game. As it is not possible for me to measure or gather a person's thoughts that were influenced by the game in any feasible manner, it was unfortunately dismissed from this project.
+
+talk about being able to playtest the mechanics more than the narrative aspects
