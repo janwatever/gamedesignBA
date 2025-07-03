@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StorySetting_MedToSmall.unity
     guid: 1e21df0f18ae7824d8d3dd9352ac5310
+  - enabled: 1
+    path: Assets/Scenes/StorySetting_FinalCutscene.unity
+    guid: c47ebf346ac456f4b9baafd3ab8c5d5c
   - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: 3fa558b8745c3094781d46cef336484a
