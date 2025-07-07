@@ -1,6 +1,10 @@
 # Abstract
 This project is my attempt at implementing outmersive elements highlighted in my thesis to showcase the practical usage of the term and consoildating it into a short narrative puzzle game. The game would touch upon two aspects of outmersion: mechanical outmersion and fictional outmersion. The main goal is to have players contemplate and critically analyze the game beyond the game itself.
 
+## Project Concept
+***
+The initial conception of this project was inspired by the puppetry metaphor by Calvillo and Cairns when I was looking through alternatives form the magic circle to describe the boundaries of a videogame. I was captivated by the imagery of puppetry and the protrayal of a videogame being a medium that is manipulated and simulatenously breathe life into by the player akin to a puppeteer bringing a static puppet to life when they animate them. This sparked an idea in the back of my head to flip the roles between the game and the player, by protraying the game as the puppeteer and the player as the puppet.
+
 # Process Documentation
 ## 16 April 2025 - The beginning
 ***
@@ -172,16 +176,31 @@ I incorporated the player's webcam into the final cutscene to showcase the True 
 
 There was the idea of a big spider that is the narrator in the game to appear in the final cutscene as well but creating, rigging and animating them within this short time frame seems to be too steep of a climb to accomplish.
 
+## 2 July 2025 - Strings and physics
+***
+I added some 2D sprites that act as puppet strings to add that extra touch to the aesthetics of the game. I used 2D physics to make it look better as well as a billboard shader so the sprite can be seen by the camera at all times.
+
+The billboard shader does not work for free-moving cameras as that breaks the position of the vertices of the shader. That can be solved by converting the position of the vertex from camera space to world space so the position stays relative to the camera while existing in the object's position in the world. But that requires more R&D with the custom shader that I got quickly from the internet and I sadly do not have the time to work on it, so I take what I can get.
+
+## 5 July 2025 - Narration and UI
+***
+As the deadline looms in the corner, I frantically add in some narration into the game and UI prompts to introduce the controls to the player. I wanted to set clear instructions for the controls of the game to the player to prevent any frustration and misunderstanding of how the game works. Since the experience of the player should be focused on evaluating the narrative of the story as a whole, if players are hung up on the controls, it would ruin their perspective of the game and jeopardizes the intended experience.
+
+## 7 July 2025 - Mad Dash to the Finish Line
+***
+There isn't much to say in this section as I frantically rush to finish as many things as I can and create a cohesive game with a start, middle and end. I am quite proud of the little webcam feature in the game that I managed to pull off at the very last minute. It adds a sense of mystery and hopefully the outmersive aspect that I am striving for in this game. 
+
 # Conclusion
-+ How do you answer your research question based on your preparation (thesis) and execution (project)? and Why?
-+ Is it possible to generalised on your result? Why?
 
 The question of my research topic was trying to figure out what is the fourth-wall of a videogame and how do developers design a game to break it. Within my thesis, I touched upon the commonly used notion of the magic circle coined by Salen and Zimmerman that many have used to describe the fourth wall in videogames and how contentious the metaphor turned out to be. Due to that contentious point, I ended up going through different variations that others have proposed to describe the fourth wall in videogames and landed on the definition of Outmersion coined by Frasca. Outmersion is the critical distancing of players when they engage with a videogame in order to analyse and evaluate it. The emphasis is on the player's perspective being outside of the game.
 
-Frasca raised 3 categories for outmersion: mechanical, fictional, and meta-outmersion. In this project, I was only able to touch upon 2 categories out of 3 due to the development time limitations. I managed to execute the mechanical aspect of outmersion by creating a puzzle game that requires players to critically analyze the game beyonnd the confines of the game itself, drawing solutions from previous experiences outside of the game to solve the game's puzzles and progress the game.
+Frasca raised 3 categories for outmersion: mechanical, fictional, and meta-outmersion. In this project, I was only able to touch upon 2 categories out of 3 due to the development time limitations. I managed to execute the mechanical aspect of outmersion by creating a puzzle game that requires players to critically analyse the rules of the game beyond the confines of the game itself, drawing solutions from previous experiences outside of the game to solve the puzzles and progress forward.
 
-The fictional aspect of outmersion is a little trickier as examples of games that manage to incorporate this is incredibly large due to the need to have a rather extensive time to set up a premise and then pull the rug under the player at the end. I tried to tackle it by simplifying the narrative of the game into its core components. I introduced a narrator at the beginning of the game who instructs the player to find a way out of their captivity, basically setting up a premise for the narrator to lead the player forward, hoping to escape. The story ends in a twist as the final cutscene of the game shows no exit at all, and the player was lead right into a trap, turned into one of the many puppets they have seen all throughout the game. This twist at the end would sufficiently invoke the outmersive aspect, as the player would have to analyze their in-game role being different from their intial understanding.
+The fictional aspect of outmersion is a little trickier as examples of games that manage to incorporate this is incredibly large due to the need to have a rather extensive time to set up a premise and then pull the rug under the player at the end. I tried to tackle it by simplifying the narrative of the game into its core components. I introduced a narrator at the beginning of the game who instructs the player to find a way out of their captivity, basically setting up a premise for the narrator to lead the player forward, hoping to escape. The story ends in a twist as the final cutscene of the game shows no exit at all, and the player was lead right into a trap, turned into one of the many puppets they have seen all throughout the game. This twist at the end would sufficiently invoke the outmersive aspect, as the player would have to analyse their in-game role being different from their initial understanding.
 
 Meta-outmersion tends to be in the favour of educational games and games that incite deliberate contemplation that needs far more time outside of the game. As it is not possible for me to measure or gather a person's thoughts that were influenced by the game in any feasible manner, it was unfortunately dismissed from this project.
 
-talk about being able to playtest the mechanics more than the narrative aspects
+Basing on the feedbacks I have received regarding the game, most of it stems from the puzzle aspects, as people mainly focus on the gameplay feel and controls when playtesting. Though the reception was generally positive with the common consensus of wanting to see more of the game and looking forward to more levels, the outmersion aspect was unfortunately not a very prominent point. I did managed to catch some interesting comments by people who noted on the multi-dimensional layout of the puzzles made them have this sort of epiphany, a realisation that there is more in the game beyond the places they can physically go to with their in-game character. Some also use the terms "mind-breaking" and "brain-melting" to describe their experience of learning the solutions to the puzzles. There was also a comment on the layout of the level where it presents puppets bigger than oneself and how they felt like that didn't fit within the narrative of the player being the puppeteer. This comment, I would say, was the only minor concrete success that I've gathered that showcases a sense of outmersion, as the notion of how the player is in fact, not the puppeteer, would be realised in the final stage of the game.
+
+All in all, these comments are few and far between as it is rather difficult to gauge a person's reactions to confirm that they are experiencing outmersion based on Frasca's definition, making my findings rather inconclusive at its current stage. Perhaps more on-site playtesting to gather candid quips or approaching the streamer demographic to playtest the game would be a step in a good direction, as they tend to be able to speak their thoughts out more freely. Additionally, preparing a comprehensive survey which is structured in a way that could encourage players to reflect upon their experience would be a good approach to get more conclusive results. 
+
