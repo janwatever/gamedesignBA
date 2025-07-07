@@ -12,7 +12,7 @@ This repository is categorized into 5 folders:
 + Read the formatted [shorten version](Documentation/ProcessDocumentation_Shorten.pdf) of the process documentation
 ### Project
 ***
-+ Look at the [Code Repository](Project/BAPrototype/) for the project's source code.
++ Look at the [Code Repository](Project/BAProject_URP/) for the project's source code.
 ### Proposal
 ***
 + Read the initial [Proposal](Proposal/TeoJiaXian_BAProposal.pdf) document of the thesis
